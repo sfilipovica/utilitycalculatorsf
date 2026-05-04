@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komunālo maksājumu kalkulators</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="main-title">Komunālo maksājumu kalkulators</h1>
+        <p class="description">Aprēķiniet savus ikmēneša maksājumus par elektrību un ūdeni, ņemot vērā patēriņa sliekšņus.</p>
+
+        <div class="input-section">
+            <div class="form-group">
+                <label for="electricity">Elektrības patēriņš (kWh):</label>
+                <input type="number" id="electricity" placeholder="Ievadiet kWh" min="0">
+            </div>
+
+            <div class="form-group">
+                <label for="water">Ūdens patēriņš (m³):</label>
+                <input type="number" id="water" placeholder="Ievadiet m³" min="0">
+            </div>
+
+            <button id="calculate-btn">Aprēķināt kopējo summu</button>
+        </div>
+
+        <div id="result-area" class="result-box">
+            <p>Ievadiet datus un nospiediet "Aprēķināt".</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
